@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.sensor, .video, .control {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.sensor {
+    flex: 1 1 30%;
+}
+.video {
+    flex:  50%;
+}
+.control {
+    flex: 1 1 50%;
+    text-align: center;
+}
+.control button {
+    padding: 20px;
+    margin: 10px 32px;
+    font-size: 24px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.control button:hover {
+    background-color: #0056b3;
+}
+.control .up {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.control .left, .control .right {
+    width: 80px;
+    display: inline-block;
+}
+.control .down {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#demo{
+
+font-family: verdana ;
+font-size: larger;
+margin-block-end: auto;
+color:rgb(90, 92, 133);
+
+
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Car Control</title>
+    <link rel="stylesheet" href="./bashar.css">
+</head>
+<body>
+
+    <h1>Robot Car Control Panel</h1>
+
+    <div class="container">
+        <div class="sensor">
+            <h2>Sensor 1</h2>
+            <p>Data: <span id="sensor1-data">0</span></p>
+        </div>
+        <div class="sensor">
+            <h2>Sensor 2</h2>
+            <p>Data: <span id="sensor2-data">0</span></p>
+        </div>
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        <div class="video">
+            <h2>Video Feed 1</h2>
+            <video id="video1" width="100%" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        
+    
+
+    <div class="control">
+        <h2>Control Buttons</h2>
+        <button class="up" onclick="move('forward')">&#9650;</button><br>
+        <button class="left" onclick="move('left')">&#9664;</button>
+        <button class="right" onclick="move('right')">&#9654;</button><br>
+        <button class="down" onclick="move('backward')">&#9660;</button>
+    </div>
+<footer>
+
+<p id="demo">
+
+all right recived by Ahmed,fatma and houssam
+
+
+</p>
+
+
+
+
+
+
+
+</footer>
+    <script>
+        function move(direction) {
+            console.log('Moving', direction);
+            // Here you would send the command to the robot car, e.g., via AJAX or WebSocket
+        }
+
+        // Example function to update sensor data
+        function updateSensorData(sensorId, data) {
+            document.getElementById(sensorId).innerText = data;
+        }
+
+        // Mock sensor data update
+        setInterval(() => {
+            updateSensorData('sensor1-data', Math.random().toFixed(2));
+            updateSensorData('sensor2-data', Math.random().toFixed(2));
+            updateSensorData('sensor3-data', Math.random().toFixed(2));
+        }, 1000);
+    </script>
+
+</body>
+</html>

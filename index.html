@@ -19,40 +19,33 @@
             <h2>Sensor 2</h2>
             <p>Data: <span id="sensor2-data">0</span></p>
         </div>
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+    </div>
+
+    <div class="container">
+        <div class="control">
+            <h2>Control Buttons</h2>
+            <div class="control-buttons">
+                <button class="up" onclick="move('forward')">&#9650;</button>
+                <div>
+                    <button class="left" onclick="move('left')">&#9664;</button>
+                    <button class="right" onclick="move('right')">&#9654;</button>
+                </div>
+                <button class="down" onclick="move('backward')">&#9660;</button>
+            </div>
+        </div>
         <div class="video">
             <h2>Video Feed 1</h2>
             <video id="video1" width="100%" controls>
                 <source src="video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        
-    
-
-    <div class="control">
-        <h2>Control Buttons</h2>
-        <button class="up" onclick="move('forward')">&#9650;</button><br>
-        <button class="left" onclick="move('left')">&#9664;</button>
-        <button class="right" onclick="move('right')">&#9654;</button><br>
-        <button class="down" onclick="move('backward')">&#9660;</button>
+        </div>
     </div>
-<footer>
 
-<p id="demo">
+    <footer>
+        <p id="demo">All rights reserved by Ahmed, Fatma, and Houssam</p>
+    </footer>
 
-all right recived by Ahmed,fatma and houssam
-
-
-</p>
-
-
-
-
-
-
-
-</footer>
     <script>
         function move(direction) {
             console.log('Moving', direction);
@@ -68,7 +61,6 @@ all right recived by Ahmed,fatma and houssam
         setInterval(() => {
             updateSensorData('sensor1-data', Math.random().toFixed(2));
             updateSensorData('sensor2-data', Math.random().toFixed(2));
-            updateSensorData('sensor3-data', Math.random().toFixed(2));
         }, 1000);
     </script>
 
